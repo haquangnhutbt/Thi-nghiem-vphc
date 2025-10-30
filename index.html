@@ -2,10 +2,37 @@
 
 <html lang="vi"><!--THƯ VIỆN CHÈN DỮ LIỆU VÀO WORD--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <!-- Thư viện CDN online -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.1.5/pizzip.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.44.0/docxtemplater.min.js"></script>
-  <script src="https://unpkg.com/html-docx-js/dist/html-docx.min.js"></script>
+  <!-- 🧩 Thư viện FileSaver -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+<script>
+if (typeof window.saveAs === "undefined") {
+  document.write('<script src="./FileSaver.min.js"><\/script>');
+}
+</script>
+
+<!-- 🧩 Thư viện PizZip -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pizzip/3.1.5/pizzip.min.js"></script>
+<script>
+if (typeof window.PizZip === "undefined") {
+  document.write('<script src="./pizzip.min.js"><\/script>');
+}
+</script>
+
+<!-- 🧩 Thư viện Docxtemplater -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.44.0/docxtemplater.min.js"></script>
+<script>
+if (typeof window.docxtemplater === "undefined" && typeof window.Docxtemplater === "undefined") {
+  document.write('<script src="./docxtemplater.min.js"><\/script>');
+}
+</script>
+
+<!-- (Tuỳ chọn) Thư viện html-docx-js nếu bạn có dùng -->
+<script src="https://unpkg.com/html-docx-js/dist/html-docx.min.js"></script>
+<script>
+if (typeof window.htmlDocx === "undefined") {
+  document.write('<script src="./html-docx.min.js"><\/script>');
+}
+</script>
 
 
 
